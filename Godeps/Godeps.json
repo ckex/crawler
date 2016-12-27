@@ -1,6 +1,11 @@
 {
 	"ImportPath": "robot",
 	"GoVersion": "devel-a3f4cc0",
-	"GodepVersion": "v74",
-	"Deps": []
+	"GodepVersion": "v75",
+	"Deps": [
+		{
+			"ImportPath": "github.com/alecthomas/log4go",
+			"Rev": "e5dc62318d9bd58682f1dceb53a4b24e8253682f"
+		}
+	]
 }
