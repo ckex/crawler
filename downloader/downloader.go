@@ -1,7 +1,7 @@
 package downloader
 
 import (
-	"robot/downloader/request"
+	"crawler/downloader/request"
 	"net/http"
 )
 

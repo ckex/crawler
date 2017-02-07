@@ -1,10 +1,10 @@
 package spider
 
 import (
-	"robot/process"
+	"crawler/process"
 	"sync"
-	"robot/downloader"
-	"robot/downloader/browser"
+	"crawler/downloader"
+	"crawler/downloader/browser"
 )
 
 type Spider struct {

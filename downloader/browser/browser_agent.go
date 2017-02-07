@@ -7,7 +7,7 @@ import (
 	"time"
 	"fmt"
 	"strings"
-	"robot/downloader/request"
+	"crawler/downloader/request"
 	"math/rand"
 )
 

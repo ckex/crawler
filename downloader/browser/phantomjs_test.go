@@ -3,15 +3,15 @@ package browser
 import (
 	"fmt"
 	"testing"
-	"robot/downloader/request"
+	"crawler/downloader/request"
 	"bytes"
-	"robot/conf"
+	"crawler/conf"
 	"net/http"
 )
 
 //  go test -run="Test_Phantomjs_Download"
 func Test_Phantomjs_Download(t *testing.T) {
-	var cleint = NewPhantom("/Users/ckex/work/golang/workspace/src/robot/robot_bin/phantomjs", conf.CACHE_DIR)
+	var cleint = NewPhantom("/Users/ckex/work/golang/workspace/src/crawler/crawler_bin/phantomjs", conf.CACHE_DIR)
 	//var cleint = DefaultPhantom
 	fmt.Printf("%v\n", cleint)
 	response, err := cleint.Download(&request.Request{
@@ -33,7 +33,7 @@ func Test_Phantomjs_China_Unicom(t *testing.T) {
 		t.Error(err)
 	}
 	fmt.Println(resp.StatusCode)
-	var cleint = NewPhantom("/Users/ckex/work/golang/workspace/src/robot/robot_bin/phantomjs", conf.CACHE_DIR)
+	var cleint = NewPhantom("/Users/ckex/work/golang/workspace/src/crawler/crawler_bin/phantomjs", conf.CACHE_DIR)
 	response, err := cleint.Download(&request.Request{
 		Url:"http://iservice.10010.com/e4/index_server.html",
 		Site:request.Site{

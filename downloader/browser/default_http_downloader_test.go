@@ -2,7 +2,7 @@ package browser
 
 import (
 	"testing"
-	"robot/downloader/request"
+	"crawler/downloader/request"
 	"net/http"
 	"fmt"
 	"io/ioutil"

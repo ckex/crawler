@@ -1,6 +1,6 @@
 package response
 
-import "robot/downloader/request"
+import "crawler/downloader/request"
 
 type Response struct{
 	request.Request

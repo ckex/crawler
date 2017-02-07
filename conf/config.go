@@ -4,7 +4,7 @@ package conf
 const (
 	VERSION string = "v01"                                                   // 版本号
 	AUTHOR string = "Ckex"                                             // 作者
-	PROJECT_DIR = "robot"                                           // 项目目录名
+	PROJECT_DIR = "crawler"                                           // 项目目录名
 	TAG string = PROJECT_DIR                                           // 软件标识符
 )
 

@@ -4,18 +4,17 @@ import (
 	"path/filepath"
 	"os"
 	"log"
-	"robot/utils"
+	"crawler/utils"
 	"net/http"
-	"robot/downloader/request"
+	"crawler/downloader/request"
 	"mime"
 	"strings"
 	"time"
 	"io/ioutil"
 	"encoding/json"
 	"os/exec"
-	"robot/conf"
-	"robot/downloader"
-
+	"crawler/conf"
+	"crawler/downloader"
 	"fmt"
 )
 

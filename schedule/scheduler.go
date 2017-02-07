@@ -1,6 +1,6 @@
 package schedule
 
-import "robot/downloader/request"
+import "crawler/downloader/request"
 
 type Schedule interface {
 	Pull() *request.Request

@@ -1,7 +1,7 @@
 package  browser
 
 import (
-	"robot/downloader/request"
+	"crawler/downloader/request"
 	"io"
 	"net/http"
 	"time"
@@ -13,7 +13,7 @@ import (
 	"compress/gzip"
 	"compress/flate"
 	"compress/zlib"
-	"robot/downloader"
+	"crawler/downloader"
 )
 
 type HttpDownloader struct {
