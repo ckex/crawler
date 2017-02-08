@@ -30,7 +30,9 @@ type (
 	}
 )
 
-var DefaultPhantom = NewPhantom(conf.PHANTOMJS, conf.CACHE_DIR)
+var (
+	DefaultPhantom = NewPhantom(conf.PHANTOMJS, conf.CACHE_DIR)
+)
 
 func NewPhantom(phantomjsFile, tempJsDir string) downloader.Downloader {
 
@@ -38,7 +40,6 @@ func NewPhantom(phantomjsFile, tempJsDir string) downloader.Downloader {
 		fmt.Printf("%s is not exists\n", phantomjsFile)
 		return nil
 	}
-
 	phantom := &Phantom{
 		PhantomjsFile:phantomjsFile,
 		TempJsDir:tempJsDir,
